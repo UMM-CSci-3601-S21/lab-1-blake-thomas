@@ -38,6 +38,10 @@ h2 {
   font-family: "EB Garamond", serif;
 }
 
+.bigLink {
+  font-size: 20px;
+}
+
 .section {
   border-radius: 25px;
   padding: 20px;
@@ -58,24 +62,30 @@ h2 {
 
 
 #tools {
-  background-color: #d5d6d2;
+  background-color: #f9f7f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-#tools > ul > li {
+#tools > ul {
+  display: inline-block;
+
+  font-family: "Marcellus", serif;
+  padding: 10px;
+}
+#tools > li {
   display: inline-block;
   font-family: "Marcellus", serif;
-  padding: 55px;
+  padding: 10px;
 }
 
 #tools-list {
   padding-left: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: none; /* This tell's the flex items to wrap if there
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
                       isn't enough space for all of the items. Without this the
                       faculty images will be in a row and only resize well unitl around
                       550px width of screen. */
