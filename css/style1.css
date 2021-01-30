@@ -40,16 +40,15 @@ h2 {
 
 #ide-tools{
   color: blue;
-  font-style: italic;
+
 }
 
 #testing-tools{
-  color: green;
-  font-family: sans-serif;
+  color: rgb(14, 117, 165);
 }
 
 #version-control-tools{
-  color: rgb(61, 134, 139);
+  color: rgb(153, 0, 255);
 }
 
 .section {
@@ -71,11 +70,14 @@ h2 {
 }
 
 .cloud.version-control{
-  color: red;
+  color: rgb(255, 0, 0);
+  font-style: italic;
 }
 .cloud.testing{
-  color: red;
+  color: rgb(255, 0, 0);
+  font-style: italic;
 }
+
 
 #tools {
   background-color: #f9f7f6;
@@ -85,11 +87,16 @@ h2 {
   align-content: center;
 }
 
-#tools > ul > li {
-  display: inline-block;
-
+#tools > ul  {
+  display: flex;
+  flex-direction: column;
   font-family: "Marcellus", serif;
-  padding: 20px;
+  padding: 10px;
+}
+
+#tools > li{
+  display: center;
+  padding: 30px;
 }
 
 #tools a{
@@ -106,6 +113,7 @@ h2 {
                       550px width of screen. */
   justify-content: center;
   align-content: center;
+
 }
 
 #faculty {
