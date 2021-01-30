@@ -38,8 +38,18 @@ h2 {
   font-family: "EB Garamond", serif;
 }
 
-.bigLink {
-  font-size: 20px;
+#ide-tools{
+  color: blue;
+  font-style: italic;
+}
+
+#testing-tools{
+  color: green;
+  font-family: sans-serif;
+}
+
+#version-control-tools{
+  color: rgb(61, 134, 139);
 }
 
 .section {
@@ -60,6 +70,12 @@ h2 {
   font-family: "Marcellus", serif;
 }
 
+.cloud.version-control{
+  color: red;
+}
+.cloud.testing{
+  color: red;
+}
 
 #tools {
   background-color: #f9f7f6;
@@ -69,16 +85,15 @@ h2 {
   align-content: center;
 }
 
-#tools > ul {
+#tools > ul > li {
   display: inline-block;
 
   font-family: "Marcellus", serif;
-  padding: 10px;
+  padding: 20px;
 }
-#tools > li {
-  display: inline-block;
-  font-family: "Marcellus", serif;
-  padding: 10px;
+
+#tools a{
+  font-size: 17px;
 }
 
 #tools-list {
