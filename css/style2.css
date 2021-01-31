@@ -8,10 +8,21 @@ use float to make something locate itself on the right or left
 
 body {
   padding: 30px;
-  background-color: #7700ff;
+  background-color: #000000;
 }
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    max-width: 53em;
+  }
+}
+
 #main-title {
-  color: #ffee00;
+  color: #8400ff;
   font-family: "Patua One", monospace;
   text-align: center;
   font-size: 4rem;
@@ -24,19 +35,6 @@ h2 {
 .bigLink {
   font-size: 17px;
 }
-#ide-tools{
-  color: blue;
-  font-style: italic;
-}
-
-#testing-tools{
-  color: green;
-  font-family: sans-serif;
-}
-
-#version-control-tools{
-  color: rgb(61, 134, 139);
-}
 
 .section {
   border-radius: 25px;
@@ -44,21 +42,22 @@ h2 {
   border: 5px solid;
   margin: 10px;
   max-width: 48em;
+  border-color: #8400ff;
 }
 
 #courses {
-  background-color: #ffde7a;
+  background-color: #00ffd5;
   font-family: "Marcellus", serif;
 }
 
 #pslo {
-  background-color: #d5d6d2;
+  background-color: #00ffd5;
   font-family: "Marcellus", serif;
 }
 
 
 #tools {
-  background-color: #f9f7f6;
+  background-color: #00ffd5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,9 +71,22 @@ h2 {
   color: red;
 }
 
+#ide-tools{
+  color: rgb(0, 217, 255);
+  font-style: italic;
+}
+
+#testing-tools{
+  color: rgb(8, 238, 46);
+  font-family: sans-serif;
+}
+
+#version-control-tools{
+  color: rgb(183, 0, 255);
+}
+
 #tools > ul {
   display: inline-block;
-
   font-family: "Marcellus", serif;
   padding: 10px;
 }
@@ -88,18 +100,15 @@ h2 {
   padding-left: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* This tell's the flex items to wrap if there
-                      isn't enough space for all of the items. Without this the
-                      faculty images will be in a row and only resize well unitl around
-                      550px width of screen. */
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
 
 #faculty {
-  background-color: #f9f7f6;
+  background-color: #00ffd5;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
 }
@@ -133,12 +142,12 @@ h2 {
 
 img.pic {
   width: 100%;
-  border: 4px solid #000000;
+  border: 4px solid #8400ff;
 }
 
 #style-selector {
   position: fixed;
-  background-color: #7a0019;
+  background-color: #000000;
   left: 0;
   right: 0;
   top: 0;
@@ -151,16 +160,16 @@ img.pic {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #8400ff;
 }
 
 #style-selector li {
-  float: right; /*explore what happens if this is 'right' instead*/
+  float: left; /*explore what happens if this is 'right' instead*/
 }
 
 #style-selector li a {
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
@@ -168,11 +177,11 @@ img.pic {
 
 /* Change the link background color to #000 (black) on hover */
 #style-selector li a:hover {
-  background-color: #000;
+  background-color: #00ffd5;
 }
 
 #validation {
   font-size: 0.8rem;
-  background-color: #d5d6d2;
+  background-color: #00ffd5;
   padding: 25px;
 }
