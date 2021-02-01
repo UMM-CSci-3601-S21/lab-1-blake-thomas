@@ -38,19 +38,6 @@ h2 {
   font-family: "EB Garamond", serif;
 }
 
-#ide-tools{
-  color: blue;
-
-}
-
-#testing-tools{
-  color: rgb(14, 117, 165);
-}
-
-#version-control-tools{
-  color: rgb(153, 0, 255);
-}
-
 .section {
   border-radius: 25px;
   padding: 20px;
@@ -69,6 +56,7 @@ h2 {
   font-family: "Marcellus", serif;
 }
 
+
 .cloud.version-control{
   color: rgb(255, 0, 0);
   font-style: italic;
@@ -78,6 +66,18 @@ h2 {
   font-style: italic;
 }
 
+#ide-tools{
+  color: blue;
+
+}
+
+#testing-tools{
+  color: rgb(14, 117, 165);
+}
+
+#version-control-tools{
+  color: rgb(153, 0, 255);
+}
 
 #tools {
   background-color: #f9f7f6;
@@ -87,16 +87,16 @@ h2 {
   align-content: center;
 }
 
-#tools > ul  {
+#tools > ul {
   display: flex;
   flex-direction: column;
   font-family: "Marcellus", serif;
   padding: 10px;
+  line-height: 27px;
 }
 
-#tools > li{
-  display: center;
-  padding: 30px;
+#tools > li {
+  display: flex;
 }
 
 #tools a{
@@ -107,14 +107,12 @@ h2 {
   padding-left: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* This tell's the flex items to wrap if there
-                      isn't enough space for all of the items. Without this the
-                      faculty images will be in a row and only resize well unitl around
-                      550px width of screen. */
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 
 }
+
 
 #faculty {
   background-color: #f9f7f6;
@@ -134,10 +132,7 @@ h2 {
   padding-left: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* This tell's the flex items to wrap if there
-                      isn't enough space for all of the items. Without this the
-                      faculty images will be in a row and only resize well unitl around
-                      550px width of screen. */
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
