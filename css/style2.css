@@ -15,14 +15,6 @@ body {
   justify-content: center;
 }
 
-@media screen and (min-width: 925px) {
-  .pslo-courses-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    max-width: 53em;
-  }
 }
 
 #main-title {
@@ -33,75 +25,73 @@ body {
 }
 
 h2 {
-  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  font-family: 'Audiowide', serif;
 }
 
-.bigLink {
-  font-size: 17px;
-}
-
+/*Here we have the class 'section'. We changed the border to make it look cooler and
+more square. We also changed the color of it and the type of border to inset. */
 .section {
-  border-radius: 25px;
+  border-radius: 1px;
   padding: 20px;
-  border: 5px solid;
+  border: 10px inset;
   margin: 10px;
-  max-width: 48em;
+  max-width: 1000px;
   border-color: #8400ff;
 }
 
-#courses {
+/*Here is our example of grouping. Both these IDs have the exact same code so
+we decided it would be more efficient to group them. It changes the background color
+and font type to be different than the first program. */
+#courses, #pslo {
   background-color: #00ffd5;
-  font-family: "Marcellus", serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-#pslo {
-  background-color: #00ffd5;
-  font-family: "Marcellus", serif;
+#ide-tools, #testing-tools, #version-control-tools{
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', sans-serif;
 }
 
+/*Here we add and emoji to our cloud class so that it stands out among the
+local class that has a computer emoji.*/
+.cloud::before {
+  content: "☁️";
+}
+
+.local::before {
+  content: "💻";
+}
+
+/*Here we have some nesting. This nesting was used in order to make the links
+a little bit bigger only in the tools ID since they were a little small */
+#tools a{
+  font-size: 17px;
+}
 
 #tools {
+  font-size: 20px;
   background-color: #00ffd5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
 }
 
-.local-version-control{
-  color: red;
-}
-.cloud-testing{
-  color: red;
-}
-
-#ide-tools{
-  color: rgb(0, 217, 255);
-  font-style: italic;
-}
-
-#testing-tools{
-  color: rgb(8, 238, 46);
-  font-family: sans-serif;
-}
-
-#version-control-tools{
-  color: rgb(183, 0, 255);
-}
-
-#tools > ul {
+/*Here we have an ID for the tools. And nested in that ID are the children for the lists in the tools ID.
+This makes our tools list horizontal instead of vertical since we were going for
+a wide theme of a website*/
+#tools > ul > li {
   display: inline-block;
-  font-family: "Marcellus", serif;
-  padding: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 30px;
+  line-height: 25px;
 }
-#tools > li {
-  display: inline-block;
-  font-family: "Marcellus", serif;
-  padding: 10px;
-}
+
 
 #tools-list {
-  padding-left: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -112,19 +102,19 @@ h2 {
 #faculty {
   background-color: #00ffd5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 
 #faculty > ul > li {
   display: inline-block;
-  font-family: sans-serif;
-  padding: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 10px;
 }
 
 #faculty-list {
-  padding-left: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; /* This tell's the flex items to wrap if there
@@ -136,17 +126,18 @@ h2 {
 }
 
 .name {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Marcellus', serif;
   font-size: 2rem;
 }
 
 .office {
-  font-family: "Marcellus", serif;
+  font-family: 'Marcellus', serif;
 }
 
 img.pic {
   width: 100%;
   border: 4px solid #8400ff;
+  border-radius: 80%;
 }
 
 #style-selector {

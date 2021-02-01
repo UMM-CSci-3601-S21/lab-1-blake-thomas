@@ -87,7 +87,7 @@ h2 {
   align-content: center;
 }
 
-#tools > ul  {
+#tools > ul {
   display: flex;
   flex-direction: column;
   font-family: "Marcellus", serif;
@@ -95,9 +95,8 @@ h2 {
   line-height: 27px;
 }
 
-#tools > li{
-  display: center;
-  padding: 30px;
+#tools > li {
+  display: flex;
 }
 
 #tools a{
