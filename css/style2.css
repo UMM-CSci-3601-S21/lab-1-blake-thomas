@@ -27,8 +27,9 @@ h2 {
   font-family: 'Audiowide', serif;
 }
 
-/*Here we have the class 'section'. We changed the border to make it look cooler and
-more square. We also changed the color of it and the type of border to inset. */
+/*Rule 1 for rubric and rule for class. Here we have the class 'section'.
+We changed the border to make it look cooler and more square.
+We also changed the color of it and the type of border to inset. */
 .section {
   border-radius: 1px;
   padding: 20px;
@@ -38,7 +39,7 @@ more square. We also changed the color of it and the type of border to inset. */
   border-color: #8400ff;
 }
 
-/*Here is our example of grouping. Both these IDs have the exact same code so
+/*Rule 2 for rubric and grouping. Here is our example of grouping. Both these IDs have the exact same code so
 we decided it would be more efficient to group them. It changes the background color
 and font type to be different than the first program. */
 #courses, #pslo {
@@ -51,7 +52,7 @@ and font type to be different than the first program. */
   font-family: 'Courier New', sans-serif;
 }
 
-/*Here we add and emoji to our cloud class so that it stands out among the
+/*Rule 3 for rubric. Here we add and emoji to our cloud class so that it stands out among the
 local class that has a computer emoji.*/
 .cloud::before {
   content: "☁️";
@@ -61,7 +62,7 @@ local class that has a computer emoji.*/
   content: "💻";
 }
 
-/*Here we have some nesting. This nesting was used in order to make the links
+/*Rule 4 for rubric and nesting. Here we have some nesting. This nesting was used in order to make the links
 a little bit bigger only in the tools ID since they were a little small */
 #tools a{
   font-size: 17px;
@@ -78,9 +79,9 @@ a little bit bigger only in the tools ID since they were a little small */
   width: 100%;
 }
 
-/*Here we have an ID for the tools. And nested in that ID are the children for the lists in the tools ID.
-This makes our tools list horizontal instead of vertical since we were going for
-a wide theme of a website*/
+/*Rule 5 for rubric and ID tag. Here we have an ID for the tools. And nested in that ID are the
+children for the lists in the tools ID. This makes our tools list horizontal instead
+of vertical since we were going for a wide theme of a website*/
 #tools > ul > li {
   display: inline-block;
   font-family: 'Noto Sans', sans-serif;
@@ -132,6 +133,7 @@ a wide theme of a website*/
   font-family: 'Marcellus', serif;
 }
 
+/*Made the pictures circles because circle images look nice.*/
 img.pic {
   width: 100%;
   border: 4px solid #8400ff;
@@ -168,7 +170,7 @@ img.pic {
   text-decoration: none;
 }
 
-/* Change the link background color to #000 (black) on hover */
+/* Change the link background color to #00ffd5 on hover */
 #style-selector li a:hover {
   background-color: #00ffd5;
 }
